@@ -13,20 +13,21 @@ int main() {
    list_add(&head, &b);
    list_add(&head, &c);
    list_add(&head, &d);
-
+   /*
    printf("\nList: %d, %d, %d, %d, %d", head.data, a.data, b.data, c.data, d.data);
    printf("\nList: ");
    for(struct list_element *i = &head; i != NULL; i = i->next) {
       printf("%d, ", i->data);
    }
-
-   list_remove(&b); //Testing remove method: removed list element b   
+   */
+   list_remove(&b); //Testing remove method: removed list element b
+   /*   
    printf("\nRemoved element b\nList: ");
    for(struct list_element *i = &head; i != NULL; i = i->next) {
       printf("%d, ", i->data);
    }
    printf("\n");
-
+   */
    return 0;
 }
 
