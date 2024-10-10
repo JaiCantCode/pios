@@ -1,5 +1,5 @@
 //#include <stdio.h>
-#include "generalTester.c"
+//#include "generalTester.c"
 
 char glbl[128];
 char huge_array[8192];
@@ -7,13 +7,15 @@ char huge_array[8192];
 
 unsigned long get_timer_count();
 void wait_one_ms();
+void testprint();
 
 void kernel_main() {
-   espPrintfTest();
+   testprint();
+   //espPrintfTest();
    unsigned long tcr = get_timer_count();
    extern int __bss_start, __bss_end;
    char *begin_bss, *end_bss;
-
+   
    begin_bss = (char*)&__bss_start;
    end_bss = (char*)&__bss_end;
 
