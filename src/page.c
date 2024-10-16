@@ -13,15 +13,14 @@ void init_pfa_list(void);
 struct ppage *allocate_physical_pages(unsigned int npages);
 void free_physical_pages(struct ppage *ppage_list);
 
+/*
 int main() {
-
    init_pfa_list();
    allocd_list = allocate_physical_pages(4);
    free_physical_pages(allocd_list);
-   
    return 0;
 }
-
+*/
 
 void init_pfa_list(void) {
    for(int i = 0; i < page_count; i++) {
