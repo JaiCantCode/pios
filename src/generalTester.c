@@ -4,12 +4,13 @@
  *
 \*/
 
-#include "rprintf.c"
-#include "serial.c"
+//#include "rprintf.c"
+//#include "serial.c"
 
 int main() {return 0;}
-
+/*
 void espPrintfTest() {
    char oogabooga[] = "Hello World! Ooga Booga";
    esp_printf(putc, "%s", oogabooga);
 }
+*/

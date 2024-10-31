@@ -17,6 +17,11 @@ OBJS = \
 	kernel_main.o \
    page.o \
    mmu.o \
+   fat.o \
+   rprintf.o \
+   serial.o \
+   sd.o \
+   delays.o \
 
 
 OBJ = $(patsubst %,$(ODIR)/%,$(OBJS))
